@@ -1,0 +1,36 @@
+:root {
+    /* Font Type w/ Weights */
+    --ff-primary: 'fira-sans', sans-serif, 'wght' 300;
+    --ff-secondary: 'fira-sans',sans-serif, 'wght' 500;
+    --ff-alt_bold: 'open-sans', sans-serif, 'wght' 800;
+    --ff-alt_reg: 'open-sans', sans-serif 'wght' 400;
+
+    /* Font Weights */
+    --fw-reg: 400;
+    --fw-med: 500;
+    --fw-bold: 800;
+    --fw-light: 300;
+
+    /* Font Style */
+    --fs-italic: italic;
+    --fs-normal: normal;
+
+    /* Asset Color from Set One */
+
+    --clr-light: #ffffff;
+    --clr-dark: #2a2e30;
+    --clr-accent: #21577d;
+
+    /* Alternatives For Colors */
+
+    --clr-alt-light: #f2f1ec;
+    --clr-alt-dark: #365b6d;
+    --clr-alt-accent: #41c1ba;
+
+    /* Font Size */
+    --fs-h1: 30px;
+    --fs-h2: 27.2px;
+    --fs-h3: 24.4px;
+    --fs-body: 18px;
+
+}
