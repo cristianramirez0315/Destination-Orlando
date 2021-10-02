@@ -23,8 +23,11 @@
 </head>
 
 <body>
+    <div class="columns"></div>
     <!--This is the title/logo of the page and should be positioned to the top left-->
-    <h1>Destination Orlando</h1>
+    <h1 class="">Destination Orlando</h1>
+    <!--This div is to hold the weather in the top right, to the left of the navbar-->
+    <div id ="weatherInfo"></p>
     <!--This is the navbar.  Do we want it as a drop down menu or as links like we previously did?-->
     <navbar>
 
@@ -32,18 +35,33 @@
     <!--This is the big main image on the page-->
     <div id="main-image-container">
 
-        <img type="image" class="image is-300x300" id="main-image"
+        <img type="image" class="image is-150x150" id="main-image"
             src="https://cdn.pixabay.com/photo/2015/10/11/03/04/orlando-981748_1280.jpg"
             alt="The Orlando skyline with the Convention Center featured prominently.">
 
-        <form id="dateForm">
-            Start Date: <input type="date" name="startDate"><br>
-            End Date: <input type="date" name="endDate"><br><br>
-            <button id="submitBtn">Submit </button>
+
+        <div class="columns">
+        <form id="dateForm" class="column">
+            <p>
+                Please select a date in the next 4 weeks to see the weather in Orlando
+            </p>
+            
+            Start Date: <input type="date" id="startDate"><br>
+            End Date: <input type="date" id="endDate"><br><br>
+            <button id="submitBtn" class="button is-info">Submit </button>
         </form>
 
+        <form id=currencyForm class="column">
+        <p>
+            Please select a currency to see what it converts to in US Dollars!
+        </p>
+            Currency: <input type="text" id="currencyType"> 
+            <br>
+            <button id="submitBtn2" class="button is-info">Submit</button>
+
+        </form>
     </div>
-    <h1 id="sub-title"></h1>
+    <h1 id="sub-title" class="container is-fluid"></h1>
     <p class="container is-fluid">
         Plan your trip to Orlando, Florida!
     <p>
@@ -70,12 +88,12 @@
                 class="image is-300x300">
             <p>
             <ul>
-                <li><a href="https://disneyworld.disney.go.com/">Disney World</a></li>
-                <li><a
+                <li><a class= "button is-link" href="https://disneyworld.disney.go.com/">Disney World</a></li>
+                <li><a class="button is-link"
                         href="https://www.universalorlando.com/web/en/us/tickets-packages/park-tickets/flr?__source=ps..prsa..dr..cuors..cscp..pdt..len..adv..ipna..exna..pbr..poof..cuo..pgl..tgm..opsv.2021Save65&gclid=CjwKCAjw49qKBhAoEiwAHQVTo9NemxRfJVmLuhCjia-DLZIJ6sxMQnoHhotibEd2cmeARStbU407IBoCPlcQAvD_BwE&gclsrc=aw.ds">Universal
                         Studios</a>
-                <li><a href="###">Icon Park</a></li>
-                <li><a
+                <li><a class= "button is-link" href="###">Icon Park</a></li>
+                <li><a class= "button is-link"
                         href="https://theescapeeffect.com/escape-rooms-in-orlando?gclid=CjwKCAjw49qKBhAoEiwAHQVToxV2wuErS6SeGQg8c6YfzkUX3mso1vAj2_XkZqlH9MjExVc4kkSRnBoCrGwQAvD_BwE">
                         The Escape Effect</a></li>
             </ul>
@@ -94,11 +112,11 @@
                 alt="A table with delicious looking fine dining set out" class="image is-300x300">
 
             <ul>
-                <li><a href="https://www.medievaltimes.com/orlando">Medieval Times</a></li>
-                <li><a href="https://www.disneysprings.com/dining/rainforest-cafe-at-disney-springs-marketplace/">Rainforest
+                <li><a class= "button is-link" href="https://www.medievaltimes.com/orlando">Medieval Times</a></li>
+                <li><a class= "button is-link" href="https://www.disneysprings.com/dining/rainforest-cafe-at-disney-springs-marketplace/">Rainforest
                         Cafe</a></li>
-                <li><a href="https://www.cloakandblaster.com/">Cloak and Blaster</a></li>
-                <li><a href="https://locations.bucadibeppo.com/us/fl/orlando/8001-s-orange-blossom-trail">Bupa di
+                <li><a class= "button is-link" href="https://www.cloakandblaster.com/">Cloak and Blaster</a></li>
+                <li><a class= "button is-link" href="https://locations.bucadibeppo.com/us/fl/orlando/8001-s-orange-blossom-trail">Bupa di
                         Beppo</a></li>
             </ul>
         </div>
@@ -111,10 +129,10 @@
             <img id="thingsToDoImg" src="https://cdn.pixabay.com/photo/2015/12/07/10/24/go-kart-1080492_1280.jpg"
                 alt="Someone racing a go kart around a tight turn" class="image is-300x300">
             <ul>
-                <li><a href="https://www.wonderworksonline.com/orlando/">Wonder Works</a></li>
-                <li><a href="https://iconparkorlando.com/attractions/the-wheel/">The Wheel at Icon Park</a></li>
-                <li><a href="https://www.crayolaexperience.com/orlando">Crayola Experience</a></li>
-                <li><a href="https://myoldtownusa.com/">Old Town</a></li>
+                <li><a class= "button is-link" href="https://www.wonderworksonline.com/orlando/">Wonder Works</a></li>
+                <li><a class= "button is-link" href="https://iconparkorlando.com/attractions/the-wheel/">The Wheel at Icon Park</a></li>
+                <li><a class= "button is-link" href="https://www.crayolaexperience.com/orlando">Crayola Experience</a></li>
+                <li><a class= "button is-link" href="https://myoldtownusa.com/">Old Town</a></li>
             </ul>
 
     </container>
