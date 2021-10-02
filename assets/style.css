@@ -1,10 +1,10 @@
-:root {
+    :root {
     /* Font Type w/ Weights */
     --ff-primary: 'fira-sans', sans-serif, 'wght' 300;
     --ff-secondary: 'fira-sans',sans-serif, 'wght' 500;
     --ff-alt_bold: 'open-sans', sans-serif, 'wght' 800;
     --ff-alt_reg: 'open-sans', sans-serif 'wght' 400;
-
+    
     /* Font Weights */
     --fw-reg: 400;
     --fw-med: 500;
