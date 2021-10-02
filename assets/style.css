@@ -1,3 +1,7 @@
+/*Import link for Bulma.  I added it thinking it was required to be both here and in the HTML.
+If I'm wrong, please let me know and delete this line.  Thanks! */
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+    
     :root {
     /* Font Type w/ Weights */
     --ff-primary: 'fira-sans', sans-serif, 'wght' 300;
