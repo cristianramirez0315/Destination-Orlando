@@ -43,3 +43,11 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 #main-image{
     margin-bottom: 25px;
 }
+
+/*Currency Converter*/
+#currencyType, #currencyForm {
+    padding: 10px;
+    width: 221px;
+    margin-bottom: 10px;
+}
+
