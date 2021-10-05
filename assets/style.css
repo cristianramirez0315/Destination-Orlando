@@ -45,9 +45,21 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 }
 
 /*Currency Converter*/
-#currencyType, #currencyForm {
+#currencyType, #currencyForm, #dropDown {
     padding: 10px;
-    width: 221px;
+    width: 225px;
     margin-bottom: 10px;
 }
+
+#currency-converter{
+    font-size: 30px;
+}
+
+#currency-converter-p{
+    margin: 0 0 15px 0;
+}
+
+
+
+
 
