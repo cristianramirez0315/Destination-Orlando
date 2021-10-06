@@ -23,67 +23,66 @@
 
 <body>
   <div class="columns"></div>
-  <!--This is the navbar.  Do we want it as a drop down menu or as links like we previously did?-->
+  <!--User:Dailen this is the navbar update-->
   <navbar>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <img src="assets/Images/Untitled design (1).svg" width="150" height="100">
-
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" width="300"
-          data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+      <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="container">
+          <div class="navbar-brand">
+              <img src="assets/Images/Untitled design (1).svg" href="./" width="150" height="100">
         </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item">
-            Home
-          </a>
-
-          <a class="navbar-item">
-            Documentation
-          </a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              More
-            </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                About
-              </a>
-              <a class="navbar-item">
-                Jobs
-              </a>h
-              <a class="navbar-item">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">
-                Report an issue
-              </a>
-            </div>
+            <span class="navbar-burger burger" aria-label="menu" aria-expanded="false" width="300" data-target="navMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </span>
+            </button>
           </div>
         </div>
-
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary">
-                <strong>Sign up</strong>
+          <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item">
+                Documentation
               </a>
-              <a class="button is-light">
-                Log in
-              </a>
+        
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  More
+                </a>
+        
+                <div class="navbar-dropdown">
+                  <a class="navbar-item">
+                    About
+                  </a>
+                  <a class="navbar-item">
+                    Jobs
+                  </a>
+                  <a class="navbar-item">
+                    Contact
+                  </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item">
+                    Report an issue
+                  </a>
+                </div>
+              </span>
+              </div>
+            </div>
+            
+        
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-light">
+                    Log in
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </nav>
+        </nav>
   </navbar>
   <!--This is the big main image on the page-->
   <div id="main-image-container">
@@ -358,6 +357,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <!--Javascript for Navbar-->
+    <script  type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
