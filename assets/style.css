@@ -38,3 +38,16 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     --fs-body: 18px;
 
 }
+
+.section_body-text  {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-light);
+    color: var(--clr-alt-dark);
+    font-size: var(--fs-body);
+}
+
+.section_body-container {
+    margin-left: auto;
+    flex-wrap: wrap;
+    
+}
