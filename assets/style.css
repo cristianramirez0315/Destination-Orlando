@@ -39,6 +39,20 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 
 }
 
+<<<<<<< HEAD
+.section_body-text  {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-light);
+    color: var(--clr-alt-dark);
+    font-size: var(--fs-body);
+}
+
+.section_body-container {
+    margin-left: auto;
+    flex-wrap: wrap;
+    
+}
+=======
 /*Main Image*/
 #hero-image{
     display: block;
@@ -69,3 +83,4 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     margin: 0 0 15px 0;
 }
 
+>>>>>>> 3244b6e92f1bfcb64e617197866f02e0abba099c
