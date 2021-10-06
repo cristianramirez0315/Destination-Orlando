@@ -39,7 +39,6 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 
 }
 
-<<<<<<< HEAD
 .section_body-text  {
     font-family: var(--ff-primary);
     font-weight: var(--fw-light);
@@ -52,7 +51,6 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     flex-wrap: wrap;
     
 }
-=======
 /*Main Image*/
 #hero-image{
     display: block;
@@ -83,4 +81,3 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     margin: 0 0 15px 0;
 }
 
->>>>>>> 3244b6e92f1bfcb64e617197866f02e0abba099c
