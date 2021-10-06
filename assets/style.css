@@ -81,3 +81,26 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     margin: 0 0 15px 0;
 }
 
+#fetch-airports {
+    margin-top: 10px;
+}
+
+#search-flight-heading {
+    font-size: 30px;
+}
+
+#date {
+    margin-bottom: 10px;
+}
+
+#departure-date-heading {
+    margin-top: 5px;
+}
+
+#danger-box {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
