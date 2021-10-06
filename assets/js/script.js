@@ -1,36 +1,33 @@
+/* Begin Currency Converter */
+
 /*fetch('https://api.currencyscoop.com/v1/latest?api_key=fd099489427af105e62f7e1eff802751')
   .then(response => response.json())
   .then(data => console.log(data));*/
 
-// set variables for currency 3-letter code and amount to be converted
-function getFrom() {
-  // Currency Coverter set endpoint and access key
-  endpoint = 'convert';
-  api_key = 'fd099489427af105e62f7e1eff802751';
+$( "#submitBtn2" ).click(function() {
 
-  fromEl = document.getElementById('dropDown').value;
-  console.log(fromEl);
+  // set variables for currency 3-letter code and amount to be converted
+  let from = $("#dropDown").val();
+  console.log(from);
 
-  amountEl = document.getElementById('currencyType').value;
-  console.log(amountEl);
-
-  // define from currency, to currency, and amount
-  from = fromEl;
-  to = 'USD';
-  amount = amountEl;
-
-  // execute the conversion using the "convert" endpoint:
-  $.ajax({
-    url: 'https://api.currencyscoop.com/' + endpoint + '?api_key=' + api_key + '&from=' + from + '&to=' + to +
-      '&amount=' + amount,
-    dataType: 'jsonp',
-    success: function (json) {
-
-      // access the conversion result in json.result
-      alert(json);
-    }
+  let amount = $("#currencyType").val();
+  console.log(amount);
+  
+  // fetch from 
+  fetch("https://data.fixer.io/api/latest?access_key=1d087b84a5b94e9e020a0f644ab8d97f&from=" + from + "&to=USD&amount=" + amount, {
+    "method": "GET",
+  })
+  .then(response => {
+    console.log(response);
+  })
+  .catch(err => {
+    console.error(err);
   });
-};
+});
+
+/* End Currency Converter */
+
+/* Start Flight Info */
 
 function fetchAirports() {
   let locationName = document.getElementById("city").value;
