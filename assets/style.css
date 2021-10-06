@@ -86,7 +86,7 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 #currency-converter{
     padding: 35px;
 }
-#currencyType, #currencyForm, #dropDown {
+#currencyType, #currencyForm, #dropDown, #currencyConverted {
     padding: 20px;
     width: 225px;
     margin-bottom: 10px;

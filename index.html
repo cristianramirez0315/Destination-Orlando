@@ -130,7 +130,7 @@
         <p id="currency-converter-p">How much is your money worth in Orlando, FL? Enter the amount of YOUR money you
           want to convert and the type of currency to find out how much it's worth in Orlando.</p>
         <form method="post">
-          <input type="text" id="currencyType" placeholder="Amount to Convert"> <br />
+          <input type="number" id="currencyType" placeholder="Amount to Convert"> <br />
           <select id="dropDown" name="dropdown">
             <option value="NONE">Please select your currency</option>
             <option value="AFA">Afghanistan afghani</option>
@@ -299,7 +299,8 @@
             <option value="ZWL">Zimbabwe dollar</option>
           </select>
           <br />
-          <button id="submitBtn2" class="button is-info" onclick="getFrom()">Convert</button><br />
+          <input type="number" id="currencyConverted" placeholder="Converted Amount"> <br />
+          <button id="submitBtn2" class="button is-info">Convert</button><br />
         </form>
       </div>
       <div id="result"></div>
