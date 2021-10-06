@@ -39,6 +39,7 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 
 }
 
+<<<<<<< HEAD
 .section_body-text  {
     font-family: var(--ff-primary);
     font-weight: var(--fw-light);
@@ -51,3 +52,35 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     flex-wrap: wrap;
     
 }
+=======
+/*Main Image*/
+#hero-image{
+    display: block;
+    background-image: url(https://cdn.pixabay.com/photo/2015/10/11/03/04/orlando-981748_1280.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 800px;
+}
+
+/*Currency Converter*/
+#currency-converter, #weather{
+    padding: 25px;
+}
+#currencyType, #currencyForm, #dropDown {
+    padding: 20px;
+    width: 225px;
+    margin-bottom: 10px;
+}
+
+#currency-converter-h2, #weather-h2{
+    font-size: 30px;
+}
+
+#currency-converter-p, #weather-p{
+    margin: 0 0 15px 0;
+}
+
+>>>>>>> 3244b6e92f1bfcb64e617197866f02e0abba099c
