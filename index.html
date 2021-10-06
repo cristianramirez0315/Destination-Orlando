@@ -2,348 +2,357 @@
 <html>
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <html lang="en-us">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--This is the favicon (the litte image next to the title of the page on the tab.)-->
-    <link rel="shortcut icon" type="image/jpg"
-        href="https://media.istockphoto.com/vectors/crocodile-vector-cartoon-crocodilian-character-of-green-alligator-in-vector-id1179885226?k=20&m=1179885226&s=612x612&w=0&h=f0Or_UdMb9k2ARTueMFQGSdyOtPsU_Da3flKfrcJeJg=" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <html lang="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--This is the favicon (the litte image next to the title of the page on the tab.)-->
+  <link rel="shortcut icon" type="image/jpg"
+    href="https://media.istockphoto.com/vectors/crocodile-vector-cartoon-crocodilian-character-of-green-alligator-in-vector-id1179885226?k=20&m=1179885226&s=612x612&w=0&h=f0Or_UdMb9k2ARTueMFQGSdyOtPsU_Da3flKfrcJeJg=" />
 
-    <!--Link to Bulma API.  Import to CSS required as well.-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <!-- Fire San Font Styles Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/mcm1rog.css">
-    <link rel="stylesheet" href="./assets/style.css">
-    <!-- Web Title -->
-    <title id="title">Destination Orlando</title>
-    <!--Commented out holding for group decision-->
-    <!--    <div id="weather" class="hide">-->
-    </div>
+  <!--Link to Bulma API.  Import to CSS required as well.-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <!-- Fire San Font Styles Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/mcm1rog.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <!-- Web Title -->
+  <title id="title">Destination Orlando</title>
+  <!--Commented out holding for group decision-->
+  <!--    <div id="weather" class="hide">-->
+  </div>
 </head>
 
 <body>
-    <div class="columns"></div>
-    <!--This is the navbar.  Do we want it as a drop down menu or as links like we previously did?-->
-    <navbar>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <img src="assets/Images/Untitled design (1).svg" width="150" height="100">
+  <div class="columns"></div>
+  <!--This is the navbar.  Do we want it as a drop down menu or as links like we previously did?-->
+  <navbar>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <img src="assets/Images/Untitled design (1).svg" width="150" height="100">
 
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" width="300" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                </a>
-            </div>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" width="300"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-            <div id="navbarBasicExample" class="navbar-menu">
-=               <div class="navbar-start">
-                <a class="navbar-item">
-                    Home
-                </a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
 
-                <a class="navbar-item">
-                    Documentation
-                </a>
+          <a class="navbar-item">
+            Documentation
+          </a>
 
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                    More
-                    </a>          
-                    <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>h
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
-                    </div>
-                </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>h
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
             </div>
-            <div class="navbar-end">                
-            </div>
-            </div>
-        </nav>
-    </navbar>
-    <!--This is the big main image on the page-->
-    <div id="main-image-container">
-        <div id="hero-image">            
+          </div>
         </div>
-        <!--
-        <div class="column" id="weather">
-            <h2 id="weather-h2">Weather</h2>
-            <form id="dateForm">
-                <p id="weather-p">
-                    Please select a date in the next 4 weeks<br /> to see the weather in Orlando
-                </p>                    
-                Start Date: <input type="date" id="startDate"><br>
-                End Date:  <input type="date" id="endDate"><br><br>
-                <button id="submitBtn" class="button is-info">Submit </button>
-            </form>
-        </div>
-        -->
-        <div class="columns">            
-            <!--Currency Coverter-->
-            <div class="column" id="currency-converter"> 
-                <h2 id="currency-converter-h2">Currency Converter</h2>
-                <p id="currency-converter-p">How much is your money worth in Orlando, FL? Enter the amount of YOUR money you want to convert and the type of currency to find out how much it's worth in Orlando.</p>
-                <form method="post">               
-                <input type="text" id="currencyType" placeholder="Amount to Convert"> <br />
-                <select id="dropDown" name="dropdown">
-                    <option value="NONE">Please select your currency</option>
-                    <option value="AFA">Afghanistan afghani</option>
-                    <option value="ALL">Albanian lek</option>
-                    <option value="DZD">Algerian dinar</option>
-                    <option value="AOR">Angolan kwanza reajustado</option>
-                    <option value="ARS">Argentine peso</option>
-                    <option value="AMD">Armenian dram</option>
-                    <option value="AWG">Aruban guilder</option>
-                    <option value="AUD">Australian dollar</option>
-                    <option value="AZN">Azerbaijanian new manat</option>
-                    <option value="BSD">Bahamian dollar</option>
-                    <option value="BHD">Bahraini dinar</option>
-                    <option value="BUT">Bangladeshi taka</option>
-                    <option value="BBD">Barbados dollar</option>
-                    <option value="BYN">Belarusian ruble</option>
-                    <option value="BZD">Belize dollar</option>
-                    <option value="BMD">Bermudian dollar</option>
-                    <option value="BTN">Bhutan ngultrum</option>
-                    <option value="BOB">Bolivian boliviano</option>
-                    <option value="BWP">Botswana pula</option>
-                    <option value="BRL">Brazilian real</option>
-                    <option value="GPB">British pound</option>
-                    <option value="BND">Brunei dollar</option>
-                    <option value="BGN">Bulgarian lev</option>
-                    <option value="BIF">Burundi franc</option>
-                    <option value="KHR">Cambodian riel</option>
-                    <option value="CAD">Canadian dollar</option>
-                    <option value="CVE">Cape Verde escudo</option>
-                    <option value="KYD">Cayman Islands dollar</option>
-                    <option value="XOF">CFA franc BCEAO</option>
-                    <option value="XAF">CFA franc BEAC</option>
-                    <option value="XPF">CFP franc</option>
-                    <option value="CLP">Chilean peso</option>
-                    <option value="CNY">Chinese yuan renminbi</option>
-                    <option value="COP">Colombian peso</option>
-                    <option value="KMF">Comoros franc</option>
-                    <option value="CDF">Congolese franc</option>
-                    <option value="CRC">Costa Rican colon</option>
-                    <option value="HRK">Croatian kuna</option>
-                    <option value="CUP">Cuban peso</option>
-                    <option value="CZK">Czech koruna</option>
-                    <option value="DKK">Danish krone</option>
-                    <option value="DJF">Djibouti franc</option>
-                    <option value="DOP">Dominican peso</option>
-                    <option value="XCD">East Caribbean dollar</option>
-                    <option value="EGP">Egyptian pound</option>
-                    <option value="SVC">El Salvador colon</option>
-                    <option value="ERN">Eritrean nakfa</option>
-                    <option value="EEK">Estonian kroon</option>
-                    <option value="ETB">Ethiopian birr</option>
-                    <option value="EUR">EU euro</option>
-                    <option value="FKP">Falkland Islands pound</option>
-                    <option value="FJD">Fiji dollar</option>
-                    <option value="GMD">Gambian dalasi</option>
-                    <option value="GEL">Georgian lari</option>
-                    <option value="GHS">Ghanaian new cedi</option>
-                    <option value="GIP">Gibraltar pound</option>
-                    <option value="XAU">Gold (ounce)</option>
-                    <option value="XFO">Gold franc</option>
-                    <option value="GTQ">Guatemalan quetzal</option>
-                    <option value="GNF">Guinean franc</option>
-                    <option value="GYD">Guyana dollar</option>
-                    <option value="HTG">Haitian gourde</option>
-                    <option value="HNL">Honduran lempira</option>
-                    <option value="HKD">Hong Kong SAR dollar</option>
-                    <option value="HUF">Hungarian forint</option>
-                    <option value="ISK">Icelandic krona</option>
-                    <option value="XDR">IMF special drawing right</option>
-                    <option value="INR">Indian rupee</option>
-                    <option value="IDR">Indonesian rupiah</option>
-                    <option value="IRR">Iranian rial</option>
-                    <option value="IQD">Iraqi dinar</option>
-                    <option value="ILS">Israeli new shekel</option>
-                    <option value="JMD">Jamaican dollar</option>
-                    <option value="JPY">Japanese yen</option>
-                    <option value="JOD">Jordanian dinar</option>
-                    <option value="KZT">Kazakh tenge</option>
-                    <option value="KES">Kenyan shilling</option>
-                    <option value="KWD">Kuwaiti dinar</option>
-                    <option value="KGS">Kyrgyz som</option>
-                    <option value="LAK">Lao kip</option>
-                    <option value="LVL">Latvian lats</option>
-                    <option value="LBP">Lebanese pound</option>
-                    <option value="LSL">Lesotho loti</option>
-                    <option value="LRD">Liberian dollar</option>
-                    <option value="LYD">Libyan dinar</option>
-                    <option value="LTL">Lithuanian litas</option>
-                    <option value="MOP">Macao SAR pataca</option>
-                    <option value="MKD">Macedonian denar</option>
-                    <option value="MGA">Malagasy ariary</option>
-                    <option value="MWK">Malawi kwacha</option>
-                    <option value="MYR">Malaysian ringgit</option>
-                    <option value="MVR">Maldivian rufiyaa</option>
-                    <option value="MOR">Mauritanian ouguiya</option>
-                    <option value="MUR">Mauritius rupee</option>
-                    <option value="MXN">Mexican peso</option>
-                    <option value="MDL">Moldovan leu</option>
-                    <option value="MNT">Mongolian tugrik</option>
-                    <option value="MAD">Moroccan dirham</option>
-                    <option value="MZN">Mozambique new metical</option>
-                    <option value="MMK">Myanmar kyat</option>
-                    <option value="NAD">Namibian dollar</option>
-                    <option value="NPR">Nepalese rupee</option>
-                    <option value="ANG">Netherlands Antillian guilder</option>
-                    <option value="NZD">New Zealand dollar</option>
-                    <option value="NIO">Nicaraguan cordoba oro</option>
-                    <option value="NGN">Nigerian naira</option>
-                    <option value="KPW">North Korean won</option>
-                    <option value="NOK">Norwegian krone</option>
-                    <option value="OMR">Omani rial</option>
-                    <option value="PKR">Pakistani rupee</option>
-                    <option value="XPD">Palladium (ounce)</option>
-                    <option value="PAB">Panamanian balboa</option>
-                    <option value="PGK">Papua New Guinea kina</option>
-                    <option value="PYG">Paraguayan guarani</option>
-                    <option value="PEN">Peruvian nuevo sol</option>
-                    <option value="PHP">Philippine peso</option>
-                    <option value="XPT">Platinum (ounce)</option>
-                    <option value="PLN">Polish zloty</option>
-                    <option value="QAR">Qatari rial</option>
-                    <option value="RON">Romanian new leu</option>
-                    <option value="RUB">Russian ruble</option>
-                    <option value="RWF">Rwandan franc</option>
-                    <option value="SHP">Saint Helena pound</option>
-                    <option value="WST">Samoan tala</option>
-                    <option value="STD">Sao Tome and Principe dobra</option>
-                    <option value="SAR">Saudi riyal</option>
-                    <option value="RSD">Serbian dinar</option>
-                    <option value="SCR">Seychelles rupee</option>
-                    <option value="SLL">Sierra Leone leone</option>
-                    <option value="XAG">Silver (ounce)</option>
-                    <option value="SGD">Singapore dollar</option>
-                    <option value="SBD">Solomon Islands dollar</option>
-                    <option value="SOS">Somali shilling</option>
-                    <option value="ZAR">South African rand</option>
-                    <option value="KRW">South Korean won</option>
-                    <option value="LKR">Sri Lanka rupee</option>
-                    <option value="SDG">Sudanese pound</option>
-                    <option value="SRD">Suriname dollar</option>
-                    <option value="SZL">Swaziland lilangeni</option>
-                    <option value="SEK">Swedish krona</option>
-                    <option value="CHS">Swiss franc</option>
-                    <option value="SYP">Syrian pound</option>
-                    <option value="TWD">Taiwan New dollar</option>
-                    <option value="TJS">Tajik somoni</option>
-                    <option value="TZS">Tanzanian shilling</option>
-                    <option value="THB">Thai baht</option>
-                    <option value="TOP">Tongan pa'anga</option>
-                    <option value="TTD">Trinidad and Tobago dollar</option>
-                    <option value="TND">Tunisian dinar</option>
-                    <option value="TRY">Turkish lira</option>
-                    <option value="TMT">Turkmen new manat</option>
-                    <option value="AED">UAE dirham</option>
-                    <option value="UGX">Uganda new shilling</option>
-                    <option value="XFU">UIC franc</option>
-                    <option value="UAH">Ukrainian hryvnia</option>
-                    <option value="UYU">Uruguayan peso uruguayo</option>
-                    <option value="USD">US dollar</option>
-                    <option value="UZS">Uzbekistani sum</option>
-                    <option value="VUV">Vanuatu vatu</option>
-                    <option value="VEF">Venezuelan bolivar fuerte</option>
-                    <option value="VND">Vietnamese dong</option>
-                    <option value="YER">Yemeni rial</option>
-                    <option value="ZMK">Zambian kwacha</option>
-                    <option value="ZWL">Zimbabwe dollar</option>
-                </select>
-                <br />
-                <button id="submitBtn2" class="button is-info" onclick="getFrom()" >Convert</button><br /> 
-                </form>           
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
             </div>
-            <div id="result"></div>
-        <!--End Currency Converter-->
+          </div>
+        </div>
+      </div>
+    </nav>
+  </navbar>
+  <!--This is the big main image on the page-->
+  <div id="main-image-container">
+    <div id="hero-image">
+
+    </div>
+    <div class="columns" id="weather">
+
+      <!-- Start flights-->
+      <div class="column">
+        <div id="search-flight-heading">Search for your flight to Orlando.</div>
+        <div class="box">
+          <!---->
+          <div id="departure-city">
+            <input class="input" id="city" type="text" />
+            <button id="fetch-airports" class="button is-info" type="button" onclick="fetchAirports()">
+              Search
+            </button>
+          </div>
+          <!---->
+          <div id="airport-list" style="display: none;">
+            <label class="label" for="date" id="departure-date-heading">Departure date:</label>
+            <input class="input" id="date" type="date" name="date" placeholder="Departure date"
+              aria-label="Departure date" />
+            <label class="label" for="airport">Airport:</label>
+            <div class="select is-rounded">
+              <select name="airport" id="airport-selection-list">
+
+              </select>
+            </div>
+            <button class="button is-info" type="button" onclick="getFlights()">
+              Search
+            </button>
+          </div>
+          <!-- flights are appended here -->
+          <div id="flight-list">
+          </div>
+        </div>
+      </div>
+      <!-- End flights-->
+      <!--Currency Coverter-->
+      <div class="column box" id="currency-converter">
+        <h2 id="currency-converter-h2">Currency Converter</h2>
+        <p id="currency-converter-p">How much is your money worth in Orlando, FL? Enter the amount of YOUR money you
+          want to convert and the type of currency to find out how much it's worth in Orlando.</p>
+        <form method="post">
+          <input type="text" id="currencyType" placeholder="Amount to Convert"> <br />
+          <select id="dropDown" name="dropdown">
+            <option value="NONE">Please select your currency</option>
+            <option value="AFA">Afghanistan afghani</option>
+            <option value="ALL">Albanian lek</option>
+            <option value="DZD">Algerian dinar</option>
+            <option value="AOR">Angolan kwanza reajustado</option>
+            <option value="ARS">Argentine peso</option>
+            <option value="AMD">Armenian dram</option>
+            <option value="AWG">Aruban guilder</option>
+            <option value="AUD">Australian dollar</option>
+            <option value="AZN">Azerbaijanian new manat</option>
+            <option value="BSD">Bahamian dollar</option>
+            <option value="BHD">Bahraini dinar</option>
+            <option value="BUT">Bangladeshi taka</option>
+            <option value="BBD">Barbados dollar</option>
+            <option value="BYN">Belarusian ruble</option>
+            <option value="BZD">Belize dollar</option>
+            <option value="BMD">Bermudian dollar</option>
+            <option value="BTN">Bhutan ngultrum</option>
+            <option value="BOB">Bolivian boliviano</option>
+            <option value="BWP">Botswana pula</option>
+            <option value="BRL">Brazilian real</option>
+            <option value="GPB">British pound</option>
+            <option value="BND">Brunei dollar</option>
+            <option value="BGN">Bulgarian lev</option>
+            <option value="BIF">Burundi franc</option>
+            <option value="KHR">Cambodian riel</option>
+            <option value="CAD">Canadian dollar</option>
+            <option value="CVE">Cape Verde escudo</option>
+            <option value="KYD">Cayman Islands dollar</option>
+            <option value="XOF">CFA franc BCEAO</option>
+            <option value="XAF">CFA franc BEAC</option>
+            <option value="XPF">CFP franc</option>
+            <option value="CLP">Chilean peso</option>
+            <option value="CNY">Chinese yuan renminbi</option>
+            <option value="COP">Colombian peso</option>
+            <option value="KMF">Comoros franc</option>
+            <option value="CDF">Congolese franc</option>
+            <option value="CRC">Costa Rican colon</option>
+            <option value="HRK">Croatian kuna</option>
+            <option value="CUP">Cuban peso</option>
+            <option value="CZK">Czech koruna</option>
+            <option value="DKK">Danish krone</option>
+            <option value="DJF">Djibouti franc</option>
+            <option value="DOP">Dominican peso</option>
+            <option value="XCD">East Caribbean dollar</option>
+            <option value="EGP">Egyptian pound</option>
+            <option value="SVC">El Salvador colon</option>
+            <option value="ERN">Eritrean nakfa</option>
+            <option value="EEK">Estonian kroon</option>
+            <option value="ETB">Ethiopian birr</option>
+            <option value="EUR">EU euro</option>
+            <option value="FKP">Falkland Islands pound</option>
+            <option value="FJD">Fiji dollar</option>
+            <option value="GMD">Gambian dalasi</option>
+            <option value="GEL">Georgian lari</option>
+            <option value="GHS">Ghanaian new cedi</option>
+            <option value="GIP">Gibraltar pound</option>
+            <option value="XAU">Gold (ounce)</option>
+            <option value="XFO">Gold franc</option>
+            <option value="GTQ">Guatemalan quetzal</option>
+            <option value="GNF">Guinean franc</option>
+            <option value="GYD">Guyana dollar</option>
+            <option value="HTG">Haitian gourde</option>
+            <option value="HNL">Honduran lempira</option>
+            <option value="HKD">Hong Kong SAR dollar</option>
+            <option value="HUF">Hungarian forint</option>
+            <option value="ISK">Icelandic krona</option>
+            <option value="XDR">IMF special drawing right</option>
+            <option value="INR">Indian rupee</option>
+            <option value="IDR">Indonesian rupiah</option>
+            <option value="IRR">Iranian rial</option>
+            <option value="IQD">Iraqi dinar</option>
+            <option value="ILS">Israeli new shekel</option>
+            <option value="JMD">Jamaican dollar</option>
+            <option value="JPY">Japanese yen</option>
+            <option value="JOD">Jordanian dinar</option>
+            <option value="KZT">Kazakh tenge</option>
+            <option value="KES">Kenyan shilling</option>
+            <option value="KWD">Kuwaiti dinar</option>
+            <option value="KGS">Kyrgyz som</option>
+            <option value="LAK">Lao kip</option>
+            <option value="LVL">Latvian lats</option>
+            <option value="LBP">Lebanese pound</option>
+            <option value="LSL">Lesotho loti</option>
+            <option value="LRD">Liberian dollar</option>
+            <option value="LYD">Libyan dinar</option>
+            <option value="LTL">Lithuanian litas</option>
+            <option value="MOP">Macao SAR pataca</option>
+            <option value="MKD">Macedonian denar</option>
+            <option value="MGA">Malagasy ariary</option>
+            <option value="MWK">Malawi kwacha</option>
+            <option value="MYR">Malaysian ringgit</option>
+            <option value="MVR">Maldivian rufiyaa</option>
+            <option value="MOR">Mauritanian ouguiya</option>
+            <option value="MUR">Mauritius rupee</option>
+            <option value="MXN">Mexican peso</option>
+            <option value="MDL">Moldovan leu</option>
+            <option value="MNT">Mongolian tugrik</option>
+            <option value="MAD">Moroccan dirham</option>
+            <option value="MZN">Mozambique new metical</option>
+            <option value="MMK">Myanmar kyat</option>
+            <option value="NAD">Namibian dollar</option>
+            <option value="NPR">Nepalese rupee</option>
+            <option value="ANG">Netherlands Antillian guilder</option>
+            <option value="NZD">New Zealand dollar</option>
+            <option value="NIO">Nicaraguan cordoba oro</option>
+            <option value="NGN">Nigerian naira</option>
+            <option value="KPW">North Korean won</option>
+            <option value="NOK">Norwegian krone</option>
+            <option value="OMR">Omani rial</option>
+            <option value="PKR">Pakistani rupee</option>
+            <option value="XPD">Palladium (ounce)</option>
+            <option value="PAB">Panamanian balboa</option>
+            <option value="PGK">Papua New Guinea kina</option>
+            <option value="PYG">Paraguayan guarani</option>
+            <option value="PEN">Peruvian nuevo sol</option>
+            <option value="PHP">Philippine peso</option>
+            <option value="XPT">Platinum (ounce)</option>
+            <option value="PLN">Polish zloty</option>
+            <option value="QAR">Qatari rial</option>
+            <option value="RON">Romanian new leu</option>
+            <option value="RUB">Russian ruble</option>
+            <option value="RWF">Rwandan franc</option>
+            <option value="SHP">Saint Helena pound</option>
+            <option value="WST">Samoan tala</option>
+            <option value="STD">Sao Tome and Principe dobra</option>
+            <option value="SAR">Saudi riyal</option>
+            <option value="RSD">Serbian dinar</option>
+            <option value="SCR">Seychelles rupee</option>
+            <option value="SLL">Sierra Leone leone</option>
+            <option value="XAG">Silver (ounce)</option>
+            <option value="SGD">Singapore dollar</option>
+            <option value="SBD">Solomon Islands dollar</option>
+            <option value="SOS">Somali shilling</option>
+            <option value="ZAR">South African rand</option>
+            <option value="KRW">South Korean won</option>
+            <option value="LKR">Sri Lanka rupee</option>
+            <option value="SDG">Sudanese pound</option>
+            <option value="SRD">Suriname dollar</option>
+            <option value="SZL">Swaziland lilangeni</option>
+            <option value="SEK">Swedish krona</option>
+            <option value="CHS">Swiss franc</option>
+            <option value="SYP">Syrian pound</option>
+            <option value="TWD">Taiwan New dollar</option>
+            <option value="TJS">Tajik somoni</option>
+            <option value="TZS">Tanzanian shilling</option>
+            <option value="THB">Thai baht</option>
+            <option value="TOP">Tongan pa'anga</option>
+            <option value="TTD">Trinidad and Tobago dollar</option>
+            <option value="TND">Tunisian dinar</option>
+            <option value="TRY">Turkish lira</option>
+            <option value="TMT">Turkmen new manat</option>
+            <option value="AED">UAE dirham</option>
+            <option value="UGX">Uganda new shilling</option>
+            <option value="XFU">UIC franc</option>
+            <option value="UAH">Ukrainian hryvnia</option>
+            <option value="UYU">Uruguayan peso uruguayo</option>
+            <option value="USD">US dollar</option>
+            <option value="UZS">Uzbekistani sum</option>
+            <option value="VUV">Vanuatu vatu</option>
+            <option value="VEF">Venezuelan bolivar fuerte</option>
+            <option value="VND">Vietnamese dong</option>
+            <option value="YER">Yemeni rial</option>
+            <option value="ZMK">Zambian kwacha</option>
+            <option value="ZWL">Zimbabwe dollar</option>
+          </select>
+          <br />
+          <button id="submitBtn2" class="button is-info" onclick="getFrom()">Convert</button><br />
+        </form>
+      </div>
+      <div id="result"></div>
+      <!--End Currency Converter-->
     </div>
     <h1 id="sub-title" class="container is-fluid"></h1>
-    <p class="container is-fluid">
-        Plan your trip to Orlando, Florida!
-    <p>
-    <p>
-        Orlando is the proud home of some of the world's greatest theme parks, restaurants, and more!
-        Book your trip to day to come see why it is an world famous travel destination.
-        Simpy select the days you wish to visit for weather information to aid in your planning.
-        Click on our handy Currency Converter for a better understanding of the conversion rate.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam neque ut necessitatibus,
-        quis odit amet eveniet possimus culpa animi tempora dolor est illo, qui voluptas consectetur
-        tenetur atque dolorem nisi?
+    <p class="is-size-3" class="is-$color-$black-ter">
+      Plan your trip to Orlando, Florida!
     </p>
-    <container class="columns" id="thingstodo">
+    <p class="is-size-5" class="is-$color-$grey-light">
+      Orlando is the proud home of some of the world's greatest theme parks, restaurants, and more!
+      Book your trip to day to come see why it is an world famous travel destination.
+      Simpy select the days you wish to visit for weather information to aid in your planning.
+      Click on our handy Currency Converter for a better understanding of the conversion rate.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam neque ut necessitatibus,
+      quis odit amet eveniet possimus culpa animi tempora dolor est illo, qui voluptas consectetur
+      tenetur atque dolorem nisi?
+    </p>
+    <container class="columns" id="thingstodo" class="section_body-text">
+      <!--Entertainment Subsection-->
+      <div class="column" id="">
+        <h2 id="entertainmentTitle" class="is-size-4" class="is-$color-$black-ter">
+          Entertainment
+        </h2>
 
-        <!--Entertainment Subsection-->
-        <div class="column" id="">
+        <a href="entertainment.html">
+          <img id="entertainmentImg" src="https://cdn.pixabay.com/photo/2017/08/29/09/26/disney-2692578_1280.jpg"
+            alt="A statue of Walt Disney holding Mickey Mouse's hand stands before the Cinderella Castle"
+            class="image is-300x300">
+        </a>
+      </div>
+      <!--Dining Subsection-->
+      <div class="column" id="dining">
+        <h2 id="diningTitle" class="is-size-4" class="is-$color-$black-ter">
+          Dining
+        </h2>
 
-            <h2 id="entertainmentTitle">
-                Entertainment
-            </h2>
+        <a href="dining.html">
+          <img id="diningImg" src="https://cdn.pixabay.com/photo/2015/03/26/10/28/restaurant-691397_1280.jpg"
+            alt="A table with delicious looking fine dining set out" class="image is-300x300">
+        </a>
+      </div>
+      <!--Things to Do Subsection-->
+      <div class="column">
+        <h2 id="thingsToDo" class="is-size-4" class="is-$color-$black-ter">
+          Things To Do
+        </h2>
 
-            <img id="entertainmentImg" src="https://cdn.pixabay.com/photo/2017/08/29/09/26/disney-2692578_1280.jpg"
-                alt="A statue of Walt Disney holding Mickey Mouse's hand stands before the Cinderella Castle"
-                class="image is-300x300">
-            <p>
-            <ul>
-                <li><a class= "button is-link" href="https://disneyworld.disney.go.com/">Disney World</a></li>
-                <li><a class="button is-link"
-                        href="https://www.universalorlando.com/web/en/us/tickets-packages/park-tickets/flr?__source=ps..prsa..dr..cuors..cscp..pdt..len..adv..ipna..exna..pbr..poof..cuo..pgl..tgm..opsv.2021Save65&gclid=CjwKCAjw49qKBhAoEiwAHQVTo9NemxRfJVmLuhCjia-DLZIJ6sxMQnoHhotibEd2cmeARStbU407IBoCPlcQAvD_BwE&gclsrc=aw.ds">Universal
-                        Studios</a>
-                <li><a class= "button is-link" href="###">Icon Park</a></li>
-                <li><a class= "button is-link"
-                        href="https://theescapeeffect.com/escape-rooms-in-orlando?gclid=CjwKCAjw49qKBhAoEiwAHQVToxV2wuErS6SeGQg8c6YfzkUX3mso1vAj2_XkZqlH9MjExVc4kkSRnBoCrGwQAvD_BwE">
-                        The Escape Effect</a></li>
-            </ul>
-            </p>
-        </div>
-
-
-        <!--Dining Subsection-->
-        <div class="column" id="dining">
-
-            <h2 id="diningTitle">
-                Dining
-            </h2>
-
-            <img id="diningImg" src="https://cdn.pixabay.com/photo/2015/03/26/10/28/restaurant-691397_1280.jpg"
-                alt="A table with delicious looking fine dining set out" class="image is-300x300">
-
-            <ul>
-                <li><a class= "button is-link" href="https://www.medievaltimes.com/orlando">Medieval Times</a></li>
-                <li><a class= "button is-link" href="https://www.disneysprings.com/dining/rainforest-cafe-at-disney-springs-marketplace/">Rainforest
-                        Cafe</a></li>
-                <li><a class= "button is-link" href="https://www.cloakandblaster.com/">Cloak and Blaster</a></li>
-                <li><a class= "button is-link" href="https://locations.bucadibeppo.com/us/fl/orlando/8001-s-orange-blossom-trail">Bupa di
-                        Beppo</a></li>
-            </ul>
-        </div>
-
-        <!--Things to Do Subsection-->
-        <div class="column">
-            <h2 id="thingsToDo">
-                Things To Do
-            </h2>
-            <img id="thingsToDoImg" src="https://cdn.pixabay.com/photo/2015/12/07/10/24/go-kart-1080492_1280.jpg"
-                alt="Someone racing a go kart around a tight turn" class="image is-300x300">
-            <ul>
-                <li><a class= "button is-link" href="https://www.wonderworksonline.com/orlando/">Wonder Works</a></li>
-                <li><a class= "button is-link" href="https://iconparkorlando.com/attractions/the-wheel/">The Wheel at Icon Park</a></li>
-                <li><a class= "button is-link" href="https://www.crayolaexperience.com/orlando">Crayola Experience</a></li>
-                <li><a class= "button is-link" href="https://myoldtownusa.com/">Old Town</a></li>
-            </ul>
-
+        <a href="things-to-do.html">
+          <img id="thingsToDoImg" src="https://cdn.pixabay.com/photo/2015/12/07/10/24/go-kart-1080492_1280.jpg"
+            alt="Someone racing a go kart around a tight turn" class="image is-300x300">
+        </a>
+      </div>
     </container>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
