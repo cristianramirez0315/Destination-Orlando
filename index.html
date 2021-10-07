@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <!-- Fire San Font Styles Adobe Fonts -->
   <link rel="stylesheet" href="https://use.typekit.net/mcm1rog.css">
+  <link rel="stylesheet" href="./assets/css/all.min.css">
   <link rel="stylesheet" href="./assets/style.css">
   <!-- Web Title -->
   <title id="title">Destination Orlando</title>
@@ -88,20 +89,21 @@
   <div class="columns container is-fluid" id="flight-plus-currency-section">
     <!-- Start flights-->
     <div class="column">
-      <div id="search-flight-heading">Search for your flight to Orlando</div>
       <div class="box">
         <!---->
+        <div id="search-flight-heading">Search for your flight to Orlando</div>
         <div id="departure-city">
-          <input class="input" id="city" type="text" placeholder="Departure location"/>
+          <label class="label" for="city" id="departure-date-heading">Departure location</label>
+          <input class="input" id="city" type="text" placeholder="Departure location" />
+          <label class="label" for="date" id="departure-date-heading">Departure date</label>
+          <input class="input" id="date" type="date" name="date" placeholder="Departure date"
+            aria-label="Departure date" />
           <button id="fetch-airports" class="button is-info" type="button" onclick="fetchAirports()">
             Search
           </button>
         </div>
         <!---->
         <div id="airport-list" style="display: none;">
-          <label class="label" for="date" id="departure-date-heading">Departure date:</label>
-          <input class="input" id="date" type="date" name="date" placeholder="Departure date"
-            aria-label="Departure date" />
           <label class="label" for="airport">Airport:</label>
           <div class="select is-rounded">
             <select name="airport" id="airport-selection-list">
@@ -114,6 +116,10 @@
         </div>
         <!-- flights are appended here -->
         <div id="flight-list">
+        </div>
+        <!-- all error messages will show here -->    
+        <div id="danger-box" class="notification is-danger is-light" style="display: none;">
+        
         </div>
       </div>
     </div>
