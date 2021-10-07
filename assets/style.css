@@ -64,14 +64,27 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 }
 
 #weather{
-    padding: 25px;
+    padding: 15px;
     font-family: var(--ff-primary);
     font-weight: 700;
     position: absolute;
-    top: 0px;
-    left: 550px;
+    /* top: 0px; */
+    /* left: 550px; */
     color:var(--clr-accent);
     border-radius: 25px;
+}
+
+.temp{
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    height: -500px;
+}
+
+.icon{
+    /* position: absolute; */
+    left: 600px;
+    top: -65px;
 }
 
 #startDate, #endDate{
