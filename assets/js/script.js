@@ -1,7 +1,7 @@
 /* Begin Currency Converter */
   $( "#submitBtn2" ).click(function() {
 
-    //clear-out converted amount before function
+    //clear-out converted amount <span> before function
     $("#convertedAmount").empty();
 
     // set variables for currency 3-letter code and amount to be converted
