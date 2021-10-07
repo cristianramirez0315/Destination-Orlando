@@ -29,8 +29,25 @@ $( "#submitBtn2" ).click(function() {
 
 /* Start Flight Info */
 
+let date;
+
 function fetchAirports() {
-  let locationName = document.getElementById("city").value;
+  $('#flight-list').hide();
+  $('#danger-box').hide();
+
+  let departureDate = $("#date").val();
+  let locationName = $("#city").val();
+  
+  if (locationName === '') {
+    displayErrorMessage("Departure location cannot be empty");
+    return;
+  }
+  if (departureDate === '') {
+    displayErrorMessage("Departure date cannot be empty");
+    return;
+  } else {
+    date = departureDate;
+  }
 
   // get all airports in the city
   let fetchAirports = `https://priceline-com-provider.p.rapidapi.com/v1/flights/locations?name=${locationName}`;
@@ -54,14 +71,14 @@ function fetchAirports() {
 }
 
 function getFlights() {
+  $('#danger-box').hide();
   // get airport code
   let departureAirportCode = $('#airport-selection-list').val();
   // must be like this 2021-10-10
-  let departureDate = $("#date").val();
   let numOfStops = 0;
 
   let fetchFlights =
-    `https://priceline-com-provider.p.rapidapi.com/v1/flights/search?sort_order=PRICE&location_departure=${departureAirportCode}&date_departure=${departureDate}&class_type=ECO&location_arrival=MCO&itinerary_type=ONE_WAY&number_of_stops=${numOfStops}`;
+    `https://priceline-com-provider.p.rapidapi.com/v1/flights/search?sort_order=PRICE&location_departure=${departureAirportCode}&date_departure=${date}&class_type=ECO&location_arrival=MCO&itinerary_type=ONE_WAY&number_of_stops=${numOfStops}`;
   fetch(fetchFlights, {
     method: "GET",
     headers: {
@@ -92,16 +109,14 @@ function displayAirportNames(airports) {
 
 function displayFlightInformation(flights) {
   $("#flight-list").html('');
+  $('#danger-box').hide();
 
   const prices = flights.pricedItinerary;
   const slices = flights.slice;
   const segments = flights.segment;
 
   if (prices === null) {
-    let html = `<div id="danger-box" class="notification is-danger is-light">
-                There are no direct flights from your location.
-                </div>`;
-    $("#flight-list").html(html);
+    displayErrorMessage("There are no direct flights from your location.");
     return;
   }
 
@@ -133,16 +148,36 @@ function displayFlightInformation(flights) {
     let flightDuration = segment.duration;
     let flightNumber = segment.flightNumber;
     let airline = segment.marketingAirline;
+    
+    html = `
+    <div class="box">
+      <div class="level">
+        <!-- Left side -->
+        <div class="level-left">
+          <div class="level-item">
+            <i class="fas fa-plane-departure icons"></i>
+            <div> ${airline}-${flightNumber}</div>
+          </div>
+          <div class="level-item">
+            <i class="fas fa-clock icons"></i>
+            <div> ${convertMinsToHrsMins(flightDuration)} </div>
+          </div>
+          <div class="level-item">
+            <div> ${getFormattedTime(departureTime)} </div>
+              <i class="fas fa-arrow-right icons"></i>
+              <div> ${getFormattedTime(arrivalTime)} </div>
+          </div>
+        </div>
+    
+        <!-- Right side -->
+        <div class="level-right" style="font-weight: bold;">
+          <i class="fas fa-dollar-sign"></i>
+          <div class="level-item">${totalPrice} per person</div>
+        </div>
+      </div>
+    </div>`;
 
-    html = `<div class="box">
-      <div>Total price: $${totalPrice} per person</div>
-      <div>Arrival time: ${arrivalTime}</div>
-      <div>Departure time: ${departureTime}</div>
-      <div>Flight duration: ${convertMinsToHrsMins(flightDuration)}</div>
-      <div>Flight number: ${flightNumber}</div>
-      <div>Airline: ${airline}</div>
-      </div>`;
-
+    $("#flight-list").show();
     $("#flight-list").append(html);
   });
 }
@@ -157,5 +192,36 @@ function convertMinsToHrsMins(minutes) {
     return h + 'h';
   }
   return h + 'h' + ' ' + m + 'm';
+}
+
+function getTimeFromDateTime(string) {
+  return string.substring(string.indexOf("T") + 1);
+}
+
+function convertTimeIntoFourDigits(time) {
+  let newTime = time.substring(0, time.length - 2);
+  let finalTime = newTime.replace(/[^\w\s]/gi, '');
+
+  return finalTime;
+}
+
+function getFormattedTime(time) {
+  // get only the time from the date-time
+  let onlyTime = getTimeFromDateTime(time);
+  // convert time into a four digit time
+  let fourDigitTime = convertTimeIntoFourDigits(onlyTime);
+
+  // convert military time into standard time
+  let hours24 = parseInt(fourDigitTime.substring(0, 2),10);
+  let hours = ((hours24 + 11) % 12) + 1;
+  let amPm = hours24 > 11 ? 'pm' : 'am';
+  let minutes = fourDigitTime.substring(2);
+
+  return hours + ':' + minutes + amPm;
+}
+
+function displayErrorMessage(message) {
+  $('#danger-box').html(`<p>${message}</p>`);
+  $('#danger-box').show();
 }
 
