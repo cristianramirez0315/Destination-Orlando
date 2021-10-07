@@ -22,7 +22,10 @@
 </head>
 
 <body>
-  <div class="columns"></div>
+  
+  <div class="columns">
+    
+  </div>
   <!--User:Dailen this is the navbar update-->
   <navbar>
       <nav class="navbar is-white" role="navigation" aria-label="main navigation">
@@ -39,6 +42,13 @@
             </button>
           </div>
         </div>
+        <!-- Weather Display -->
+        <div id="weather" onload="fetchWeather">
+          <p class="temp" placeholder="56">56 </p>
+          <p class="icon"> </p>
+        
+        </div>
+        <!-- Weather End -->
           <div id="navMenu" class="navbar-menu">
             <div class="navbar-start">
         
@@ -108,6 +118,9 @@
       </div>
     </div>
     <!-- End flights-->
+
+    
+
     <!--Currency Coverter-->
     <div class="column box" id="currency-converter">
       <h2 id="currency-converter-h2">Currency Converter</h2>
@@ -346,6 +359,7 @@
   <script src="assets/js/script.js"></script>
   <!--Javascript for Navbar-->
   <script type="text/javascript" src="script.js"></script>
+  <script src="/assets/js/weather.js"></script>
 </body>
 
 </html>
