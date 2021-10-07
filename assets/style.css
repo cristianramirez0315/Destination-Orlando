@@ -101,7 +101,7 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 }
 #currencyType, #currencyForm, #dropDown, #currencyConverted {
     padding: 20px;
-    width: 225px;
+    width: 250px;
     margin-bottom: 10px;
 }
 
@@ -111,6 +111,13 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 
 #currency-converter-p, #weather-p{
     margin: 0 0 15px 0;
+}
+#currencyConverted{
+    border: black 1px;
+}
+#convertedAmount{
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 /*End Currancy Converter*/
