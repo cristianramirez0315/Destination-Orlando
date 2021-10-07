@@ -59,7 +59,7 @@ function fetchAirports() {
     method: "GET",
     headers: {
       "x-rapidapi-host": "priceline-com-provider.p.rapidapi.com",
-      "x-rapidapi-key": "d02c73e7c4msh961701991ae268cp14fca5jsn4327054c12da",
+      "x-rapidapi-key": "83cd232f68mshc3e5ef9a184e7ebp170f42jsn4d1325862b3e",
     },
   })
     .then((response) => {
@@ -87,7 +87,7 @@ function getFlights() {
     method: "GET",
     headers: {
       "x-rapidapi-host": "priceline-com-provider.p.rapidapi.com",
-      "x-rapidapi-key": "d02c73e7c4msh961701991ae268cp14fca5jsn4327054c12da",
+      "x-rapidapi-key": "83cd232f68mshc3e5ef9a184e7ebp170f42jsn4d1325862b3e",
     },
   })
     .then((response) => {
