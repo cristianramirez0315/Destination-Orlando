@@ -112,7 +112,7 @@ function displayAirportNames(airports) {
 }
 
 function displayFlightInformation(flights) {
-  $("#flight-list").html('');
+  $("#flight-list").hide();
   $('#danger-box').hide();
 
   const prices = flights.pricedItinerary;

@@ -152,6 +152,14 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     margin-top: 20px;
 }
 
+#airport-list {
+    display: none;
+}
+
+#select-airport {
+    margin-bottom: 10px;
+}
+
 .flight-heading {
     font-style: italic;
     font-weight: bold;

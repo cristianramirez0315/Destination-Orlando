@@ -90,8 +90,7 @@
   </div>
   <div class="columns container is-fluid" id="flight-plus-currency-section">
     <!-- Start flights-->
-    <div class="column">
-      <div class="box">
+    <div class="column box is-half">
         <!---->
         <div id="search-flight-heading">Search for your flight to Orlando</div>
         <div id="departure-city">
@@ -105,9 +104,9 @@
           </button>
         </div>
         <!---->
-        <div id="airport-list" style="display: none;">
+        <div id="airport-list">
           <label class="label" for="airport">Airport:</label>
-          <div class="select is-rounded">
+          <div class="select is-rounded" id="select-airport">
             <select name="airport" id="airport-selection-list">
 
             </select>
@@ -123,14 +122,13 @@
         <div id="danger-box" class="notification is-danger is-light" style="display: none;">
         
         </div>
-      </div>
     </div>
     <!-- End flights-->
 
     
 
     <!--Currency Coverter-->
-    <div class="column box" id="currency-converter">
+    <div class="column box is-half" id="currency-converter">
       <h2 id="currency-converter-h2">Currency Converter</h2>
       <p id="currency-converter-p">How much is your money worth in Orlando, FL? Enter the amount of YOUR money you
         want to convert and the type of currency to find out how much it's worth in Orlando.</p>
