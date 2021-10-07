@@ -28,13 +28,13 @@
     
   </div>
   <!--User:Dailen this is the navbar update-->
-  <navbar>
-      <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+    <navbar>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="container">
           <div class="navbar-brand">
-            <a href="index.html">
+        <a href="/"></a>
               <img src="assets/Images/Untitled design (1).svg" href="./" width="150" height="100">
-            </a>
+        </a>
             <span class="navbar-burger burger" aria-label="menu" aria-expanded="false" width="300" data-target="navMenu">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -43,6 +43,37 @@
             </button>
           </div>
         </div>
+          <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+        
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Start Discovering
+                </a>
+                <div class="navbar-dropdown">
+                  <a href="dining.html" class="navbar-item">
+                    Dining
+                  </a>
+                  <a href="entertainment.html" class="navbar-item">
+                    Entertainment
+                  </a>
+                  <a href="things-to-do.html" class="navbar-item">
+                    Things To Do
+                  </a>
+                </div>
+              </span>
+              </div>
+            </div>
+            
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+  </navbar>
         <!-- Weather Display -->
         <div id="weather" onload="fetchWeather">
           <p class="temp"></p>
@@ -52,37 +83,7 @@
         
         </div>
         <!-- Weather End -->
-          <div id="navMenu" class="navbar-menu">
-            <div class="navbar-start">
-        
-              <div class="navbar-item has-dropdown is-hoverable">
-        
-                <div class="navbar-dropdown" href="things-to-do.html">
-                  <a class="navbar-item">
-                    Things To Do 
-                  </a>
-                  <a class="navbar-item" href="dining.html">
-                    Dining
-                  </a>
-                  <a class="navbar-item" href="entertainment.html">
-                    Entertainment
-                  </a>
-                  <hr class="navbar-divider">
-                </div>
-              </span>
-              </div>
-            </div>
-            
-        
-            <div class="navbar-end">
-              <div class="navbar-item">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </navbar>
+
   <!--This is the big main image on the page-->
 
   <div id="hero-image">
@@ -329,7 +330,9 @@
       <!--Entertainment Subsection-->
       <div class="column" id="">
         <h2 id="entertainmentTitle" class="is-size-4" class="is-$color-$black-ter">
+          
           Entertainment
+        
         </h2>
 
         <a href="entertainment.html">
@@ -341,7 +344,9 @@
       <!--Dining Subsection-->
       <div class="column" id="dining">
         <h2 id="diningTitle" class="is-size-4" class="is-$color-$black-ter">
+          
           Dining
+        
         </h2>
 
         <a href="dining.html">
@@ -365,9 +370,11 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="assets/js/script.js"></script>
-  <!--Javascript for Navbar-->
+  <script src="assets/script.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <script src="/assets/js/weather.js"></script>
+  
+  
 </body>
 
 </html>

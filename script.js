@@ -25,7 +25,7 @@
   
   // });
 
-      //Dailen Code Hamburger Menu is-active Function
+      //User:Dailen Hamburger Menu is-active Function
       (function() {
         var burger = document.querySelector('.burger');
         var nav = document.querySelector('#'+burger.dataset.target);
