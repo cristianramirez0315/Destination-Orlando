@@ -1,12 +1,16 @@
 /* Begin Currency Converter */
   $( "#submitBtn2" ).click(function() {
 
+    //clear-out converted amount before function
+    $("#convertedAmount").empty();
+
     // set variables for currency 3-letter code and amount to be converted
     let from = $("#dropDown").val();
     console.log(from);
-
     let amount = $("#currencyType").val();
     console.log(amount);
+
+    let convertedResults = {};
 
     // fetch from 
     fetch("https://data.fixer.io/api/convert?access_key=1d087b84a5b94e9e020a0f644ab8d97f&from=" + from + "&to=USD&amount=" + amount, {
@@ -19,7 +23,8 @@
     })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      console.log(data.result);
+      $('#convertedAmount').append(data.result);
     })
   });
 
