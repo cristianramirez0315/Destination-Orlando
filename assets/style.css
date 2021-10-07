@@ -120,6 +120,11 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     margin-top: 5px;
 }
 
+#flight-list {
+    overflow: scroll; 
+    height: 240px;
+}
+
 #danger-box {
     text-align: center;
     font-size: 16px;
@@ -128,4 +133,3 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 }
 
 /*End flight Search*/
-
