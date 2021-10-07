@@ -99,7 +99,6 @@ function displayFlightInformation(flights) {
 
   if (prices === null) {
     let html = `<div id="danger-box" class="notification is-danger is-light">
-                <button class="delete"></button>
                 There are no direct flights from your location.
                 </div>`;
     $("#flight-list").html(html);
@@ -151,8 +150,12 @@ function displayFlightInformation(flights) {
 function convertMinsToHrsMins(minutes) {
   let h = Math.floor(minutes / 60);
   let m = minutes % 60;
-  h = h < 10 ? '0' + h : h;
-  m = m < 10 ? '0' + m : m;
-  return h + ':' + m;
+  if (h === 0) {
+    return m + 'm';
+  }
+  if (m === 0) {
+    return h + 'h';
+  }
+  return h + 'h' + ' ' + m + 'm';
 }
 
