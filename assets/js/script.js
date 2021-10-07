@@ -1,34 +1,30 @@
 /* Begin Currency Converter */
+$(document).ready(function(){
+  $( "#submitBtn2" ).click(function() {
 
-/*fetch('https://api.currencyscoop.com/v1/latest?api_key=fd099489427af105e62f7e1eff802751')
-  .then(response => response.json())
-  .then(data => console.log(data));*/
+    // set variables for currency 3-letter code and amount to be converted
+    let from = $("#dropDown").val();
+    console.log(from);
 
-$( "#submitBtn2" ).click(function() {
+    let amount = $("#currencyType").val();
+    console.log(amount);
 
-  // set variables for currency 3-letter code and amount to be converted
-  let from = $("#dropDown").val();
-  console.log(from);
-
-  let amount = $("#currencyType").val();
-  console.log(amount);
-  
-  // fetch from 
-  fetch("https://data.fixer.io/api/latest?access_key=1d087b84a5b94e9e020a0f644ab8d97f&from=" + from + "&to=USD&amount=" + amount, {
-    "method": "GET",
-  })
-  .then(response => {
-    console.log(response);
-  })
-  .catch(err => {
-    console.error(err);
+    // fetch from 
+    fetch("https://data.fixer.io/api/convert?access_key=1d087b84a5b94e9e020a0f644ab8d97f&from=" + from + "&to=USD&amount=" + amount, {
+      "method": "GET",
+      contentType: "application/json",
+      dataType: 'json',
+    success: function(result){
+      console.log(result);
+    }
   });
 });
-
+});
 /* End Currency Converter */
 
-/* Start Flight Info */
 
+
+/* Start Flight Info */
 let date;
 
 function fetchAirports() {
