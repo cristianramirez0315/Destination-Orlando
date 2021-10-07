@@ -1,5 +1,4 @@
 /* Begin Currency Converter */
-$(document).ready(function(){
   $( "#submitBtn2" ).click(function() {
 
     // set variables for currency 3-letter code and amount to be converted
@@ -17,9 +16,13 @@ $(document).ready(function(){
     success: function(result){
       console.log(result);
     }
+    })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
   });
-});
-});
+
 /* End Currency Converter */
 
 

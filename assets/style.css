@@ -98,6 +98,9 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 #currency-converter-p, #weather-p{
     margin: 0 0 15px 0;
 }
+#currencyConverted{
+    border: black 1px;
+}
 
 /*End Currancy Converter*/
 
