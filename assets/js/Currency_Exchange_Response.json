@@ -1,0 +1,283 @@
+{meta: {…}, response: {…}}
+meta:
+code: 200
+disclaimer: "Usage subject to terms: https://currencyscoop.com/terms"
+[[Prototype]]: Object
+constructor: ƒ Object()
+assign: ƒ assign()
+create: ƒ create()
+defineProperties: ƒ defineProperties()
+defineProperty: ƒ defineProperty()
+entries: ƒ entries()
+freeze: ƒ freeze()
+fromEntries: ƒ fromEntries()
+getOwnPropertyDescriptor: ƒ getOwnPropertyDescriptor()
+getOwnPropertyDescriptors: ƒ getOwnPropertyDescriptors()
+getOwnPropertyNames: ƒ getOwnPropertyNames()
+getOwnPropertySymbols: ƒ getOwnPropertySymbols()
+getPrototypeOf: ƒ getPrototypeOf()
+hasOwn: ƒ hasOwn()
+is: ƒ is()
+isExtensible: ƒ isExtensible()
+isFrozen: ƒ isFrozen()
+isSealed: ƒ isSealed()
+keys: ƒ keys()
+length: 1
+name: "Object"
+preventExtensions: ƒ preventExtensions()
+prototype: {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+seal: ƒ seal()
+setPrototypeOf: ƒ setPrototypeOf()
+values: ƒ values()
+arguments: (...)
+caller: (...)
+[[Prototype]]: ƒ ()
+[[Scopes]]: Scopes[0]
+hasOwnProperty: ƒ hasOwnProperty()
+isPrototypeOf: ƒ isPrototypeOf()
+propertyIsEnumerable: ƒ propertyIsEnumerable()
+toLocaleString: ƒ toLocaleString()
+toString: ƒ toString()
+valueOf: ƒ valueOf()
+__defineGetter__: ƒ __defineGetter__()
+__defineSetter__: ƒ __defineSetter__()
+__lookupGetter__: ƒ __lookupGetter__()
+__lookupSetter__: ƒ __lookupSetter__()
+__proto__: (...)
+get __proto__: ƒ __proto__()
+set __proto__: ƒ __proto__()
+response:
+base: "USD"
+date: "2021-09-29T13:12:28Z"
+rates:
+AED: 3.6725
+AFN: 79.93139882
+ALL: 104.18027168
+AMD: 482.13133843
+ANG: 1.78976005
+AOA: 604.58940855
+ARS: 98.56957651
+ATS: 11.81465053
+AUD: 1.38756511
+AWG: 1.79
+AZM: 8494.89531487
+AZN: 1.69897906
+BAM: 1.67928373
+BBD: 2
+BDT: 85.51000326
+BEF: 34.63600509
+BGN: 1.67928373
+BHD: 0.376
+BIF: 1986.30621939
+BMD: 1
+BND: 1.35812286
+BOB: 6.90224031
+BRL: 5.42366843
+BSD: 1
+BTN: 74.20214134
+BWP: 11.14682924
+BYN: 2.50781727
+BYR: 25078.1727047
+BZD: 2.01540865
+CAD: 1.27127468
+CDF: 1976.87543209
+CHF: 0.93006972
+CLF: 0.02909082
+CLP: 802.52585226
+CNH: 6.46775057
+CNY: 6.46452356
+COP: 3833.47171493
+CRC: 625.50877199
+CUC: 1
+CUP: 24.09903023
+CVE: 94.67827835
+CYP: 0.50251868
+CZK: 21.88599752
+DEM: 1.67928373
+DJF: 177.78680516
+DKK: 6.38449039
+DOP: 56.3687086
+DZD: 136.88403323
+EEK: 13.43426986
+EGP: 15.70232958
+ERN: 15
+ESP: 142.85970819
+ETB: 45.9992282
+EUR: 0.85860414
+FIM: 5.10502838
+FJD: 2.09630408
+FKP: 0.74289256
+FRF: 5.63207395
+GBP: 0.74289256
+GEL: 3.11187631
+GGP: 0.74289256
+GHC: 60451.08936057
+GHS: 6.04510894
+GIP: 0.74289256
+GMD: 51.51365206
+GNF: 9770.87316988
+GRD: 292.56936019
+GTQ: 7.73535764
+GYD: 208.82183829
+HKD: 7.78409321
+HNL: 24.09082014
+HRK: 6.43759546
+HTG: 99.17948006
+HUF: 309.12025154
+IDR: 14296.72413634
+IEP: 0.67620571
+ILS: 3.21224243
+IMP: 0.74289256
+INR: 74.20214134
+IQD: 1459.83856493
+IRR: 42025.29812939
+ISK: 129.39410932
+ITL: 1662.48943523
+JEP: 0.74289256
+JMD: 148.20199817
+JOD: 0.709
+JPY: 111.55863691
+KES: 110.49271441
+KGS: 84.7901995
+KHR: 4092.85681477
+KMF: 422.40554615
+KPW: 899.99587716
+KRW: 1186.12383443
+KWD: 0.30152361
+KYD: 0.81999756
+KZT: 425.52111754
+LAK: 9907.39066919
+LBP: 1507.5
+LKR: 199.92676454
+LRD: 171.01714944
+LSL: 15.09080731
+LTL: 2.96458837
+LUF: 34.63600509
+LVL: 0.60342699
+LYD: 4.53856251
+MAD: 9.02686964
+MDL: 17.66747748
+MGA: 3981.77393354
+MGF: 19908.86966772
+MKD: 52.73287209
+MMK: 1847.89354174
+MNT: 2854.14485546
+MOP: 8.01761601
+MRO: 361.88912995
+MRU: 36.188913
+MTL: 0.36859876
+MUR: 42.40007401
+MVR: 15.394556
+MWK: 815.35851172
+MXN: 20.42096292
+MXV: 3.01943898
+MYR: 4.18448389
+MZM: 63811.64445602
+MZN: 63.81164446
+NAD: 15.09080731
+NGN: 410.42329053
+NIO: 35.1177804
+NLG: 1.89211453
+NOK: 8.73349906
+NPR: 119.27994221
+NZD: 1.44714307
+OMR: 0.3845
+PAB: 1
+PEN: 4.1300325
+PGK: 3.50876421
+PHP: 50.90399363
+PKR: 170.79921007
+PLN: 3.97792528
+PTE: 172.13467489
+PYG: 6882.44569857
+QAR: 3.64
+ROL: 42490.34984907
+RON: 4.24903498
+RSD: 100.83250273
+RUB: 72.71425597
+RWF: 996.73934032
+SAR: 3.75
+SBD: 8.05476457
+SCR: 13.13266509
+SDD: 43964.26443561
+SDG: 439.64264436
+SEK: 8.75013602
+SGD: 1.35812286
+SHP: 0.74289256
+SIT: 205.75589575
+SKK: 25.86630828
+SLL: 10567.16162915
+SOS: 584.10607782
+SPL: 0.16666667
+SRD: 21.35042797
+SRG: 21350.42796637
+STD: 21190.52029138
+STN: 21.19052029
+SVC: 8.75
+SYP: 1257.86163534
+SZL: 15.09080731
+THB: 33.8886474
+TJS: 11.33754486
+TMM: 17467.14303249
+TMT: 3.49342861
+TND: 2.80828825
+TOP: 2.25881382
+TRL: 8853404.3809797
+TRY: 8.85340438
+TTD: 6.79128394
+TVD: 1.38756511
+TWD: 27.80645149
+TZS: 2308.81501247
+UAH: 26.59886993
+UGX: 3534.80490153
+USD: 1
+UYU: 42.77919581
+UZS: 10693.80750049
+VAL: 1662.48943523
+VEB: 411565528167830.56
+VEF: 411192372810.0203
+VES: 4111923.7281002
+VND: 22683.89100815
+VUV: 112.48911231
+WST: 2.58472047
+XAF: 563.20739487
+XAG: 0.04510867
+XAU: 0.00057498
+XBT: 0.00002368
+XCD: 2.70237991
+XDR: 0.70763239
+XOF: 563.20739487
+XPD: 0.00052174
+XPF: 102.45872774
+XPT: 0.00102864
+(...)
+[[Prototype]]: Object
+constructor: ƒ Object()
+hasOwnProperty: ƒ hasOwnProperty()
+isPrototypeOf: ƒ isPrototypeOf()
+propertyIsEnumerable: ƒ propertyIsEnumerable()
+toLocaleString: ƒ toLocaleString()
+toString: ƒ toString()
+valueOf: ƒ valueOf()
+__defineGetter__: ƒ __defineGetter__()
+__defineSetter__: ƒ __defineSetter__()
+__lookupGetter__: ƒ __lookupGetter__()
+__lookupSetter__: ƒ __lookupSetter__()
+__proto__: (...)
+get __proto__: ƒ __proto__()
+set __proto__: ƒ __proto__()
+[[Prototype]]: Object
+constructor: ƒ Object()
+hasOwnProperty: ƒ hasOwnProperty()
+isPrototypeOf: ƒ isPrototypeOf()
+propertyIsEnumerable: ƒ propertyIsEnumerable()
+toLocaleString: ƒ toLocaleString()
+toString: ƒ toString()
+valueOf: ƒ valueOf()
+__defineGetter__: ƒ __defineGetter__()
+__defineSetter__: ƒ __defineSetter__()
+__lookupGetter__: ƒ __lookupGetter__()
+__lookupSetter__: ƒ __lookupSetter__()
+__proto__: (...)
+get __proto__: ƒ __proto__()
+set __proto__: ƒ __proto__()
