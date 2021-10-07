@@ -146,10 +146,19 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 }
 
 #danger-box {
+    display: none;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
     margin-top: 20px;
+}
+
+#airport-list {
+    display: none;
+}
+
+#select-airport {
+    margin-bottom: 10px;
 }
 
 .flight-heading {
