@@ -63,15 +63,29 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     padding-top: 53.28%;
 }
 
-/*#weather{
-    padding: 25px;
+#weather{
+    padding: 15px;
+    font-family: var(--ff-primary);
+    font-weight: 700;
     position: absolute;
-    top: 100px;
-    left: 50px;
-    color: black;
-    background-color: white; opacity:0.65;
+    /* top: 0px; */
+    /* left: 550px; */
+    color:var(--clr-accent);
     border-radius: 25px;
-}*/
+}
+
+.temp{
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    height: -500px;
+}
+
+.icon{
+    /* position: absolute; */
+    left: 600px;
+    top: -65px;
+}
 
 #startDate, #endDate{
     padding: 5px; 
@@ -132,10 +146,19 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 }
 
 #danger-box {
+    display: none;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
     margin-top: 20px;
+}
+
+#airport-list {
+    display: none;
+}
+
+#select-airport {
+    margin-bottom: 10px;
 }
 
 .flight-heading {

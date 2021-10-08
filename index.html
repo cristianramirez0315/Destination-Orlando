@@ -23,15 +23,18 @@
 </head>
 
 <body>
-  <div class="columns"></div>
+  
+  <div class="columns">
+    
+  </div>
   <!--User:Dailen this is the navbar update-->
-  <navbar>
-      <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+    <navbar>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="container">
           <div class="navbar-brand">
-            <a href="index.html">
+        <a href="index.html">
               <img src="assets/Images/Untitled design (1).svg" href="./" width="150" height="100">
-            </a>
+        </a>
             <span class="navbar-burger burger" aria-label="menu" aria-expanded="false" width="300" data-target="navMenu">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -44,33 +47,43 @@
             <div class="navbar-start">
         
               <div class="navbar-item has-dropdown is-hoverable">
-        
-                <div class="navbar-dropdown" href="things-to-do.html">
-                  <a class="navbar-item">
-                    Things To Do 
-                  </a>
-                  <a class="navbar-item" href="dining.html">
+                <a class="navbar-link">
+                  Start Discovering
+                </a>
+                <div class="navbar-dropdown">
+                  <a href="dining.html" class="navbar-item">
                     Dining
                   </a>
-                  <a class="navbar-item" href="entertainment.html">
+                  <a href="entertainment.html" class="navbar-item">
                     Entertainment
                   </a>
-                  <hr class="navbar-divider">
+                  <a href="things-to-do.html" class="navbar-item">
+                    Things To Do
+                  </a>
                 </div>
               </span>
               </div>
             </div>
             
-        
             <div class="navbar-end">
               <div class="navbar-item">
+                <div class="buttons">
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </nav>
+        </nav>
   </navbar>
+        <!-- Weather Display -->
+        <div id="weather" onload="fetchWeather">
+          <p class="temp"></p>
+          <p class="temp_min"></p>
+          <p class="temp_max"></p>
+          <p class="icon"></p>
+        
+        </div>
+        <!-- Weather End -->
+
   <!--This is the big main image on the page-->
 
   <div id="hero-image">
@@ -78,13 +91,12 @@
   </div>
   <div class="columns container is-fluid" id="flight-plus-currency-section">
     <!-- Start flights-->
-    <div class="column">
-      <div class="box">
+    <div class="column box is-half">
         <!---->
         <div id="search-flight-heading">Search for your flight to Orlando</div>
         <div id="departure-city">
           <label class="label" for="city" id="departure-date-heading">Departure location</label>
-          <input class="input" id="city" type="text" placeholder="Departure location" />
+          <input class="input" id="city" type="text" />
           <label class="label" for="date" id="departure-date-heading">Departure date</label>
           <input class="input" id="date" type="date" name="date" placeholder="Departure date"
             aria-label="Departure date" />
@@ -93,9 +105,9 @@
           </button>
         </div>
         <!---->
-        <div id="airport-list" style="display: none;">
+        <div id="airport-list">
           <label class="label" for="airport">Airport:</label>
-          <div class="select is-rounded">
+          <div class="select is-rounded" id="select-airport">
             <select name="airport" id="airport-selection-list">
 
             </select>
@@ -106,16 +118,19 @@
         </div>
         <!-- flights are appended here -->
         <div id="flight-list">
+          
         </div>
         <!-- all error messages will show here -->    
-        <div id="danger-box" class="notification is-danger is-light" style="display: none;">
+        <div id="danger-box" class="notification is-danger is-light">
         
         </div>
-      </div>
     </div>
     <!-- End flights-->
+
+    
+
     <!--Currency Coverter-->
-    <div class="column box" id="currency-converter">
+    <div class="column box is-half" id="currency-converter">
       <h2 id="currency-converter-h2">Currency Converter</h2>
       <p id="currency-converter-p">How much is your money worth in Orlando, FL? Enter the amount of YOUR money you
         want to convert and the type of currency to find out how much it's worth in Orlando.</p>
@@ -315,7 +330,9 @@
       <!--Entertainment Subsection-->
       <div class="column" id="">
         <h2 id="entertainmentTitle" class="is-size-4" class="is-$color-$black-ter">
+          
           Entertainment
+        
         </h2>
         <div class="box">
           <a href="entertainment.html">
@@ -328,7 +345,9 @@
       <!--Dining Subsection-->
       <div class="column" id="dining">
         <h2 id="diningTitle" class="is-size-4" class="is-$color-$black-ter">
+          
           Dining
+        
         </h2>
         <div class="box">
           <a href="dining.html">
@@ -354,8 +373,11 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="assets/js/script.js"></script>
-  <!--Javascript for Navbar-->
+  <script src="assets/script.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script src="/assets/js/weather.js"></script>
+  
+  
 </body>
 
 </html>

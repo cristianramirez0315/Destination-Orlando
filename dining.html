@@ -12,8 +12,10 @@
     <!--Link to Bulma API.  Import to CSS required as well.-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <!-- Fire San Font Styles Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/mcm1rog.css">
-
+      <!-- Fire San Font Styles Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/mcm1rog.css">
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <link rel="stylesheet" href="./assets/style.css">
     <!-- Web Title -->
     <title id="title">Destination Orlando</title>
     <style src=./assets/style.css></style>
@@ -23,60 +25,59 @@
 </head>
 
 <body>
-    <div class="columns"></div>
-    <!--This is the navbar.  Do we want it as a drop down menu or as links like we previously did?-->
+    <!--User:Dailen this is the navbar update-->
     <navbar>
-      <navbar>
-        <nav class="navbar is-white" role="navigation" aria-label="main navigation">
-        <div class="container">
-            <div class="navbar-brand">
-              <a href="index.html">
-                <img src="assets/Images/Untitled design (1).svg" href="./" width="150" height="100">
-              </a>
-              <span class="navbar-burger burger" aria-label="menu" aria-expanded="false" width="300" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="container">
+          <div class="navbar-brand">
+        <a href="index.html">
+              <img src="assets/Images/Untitled design (1).svg" href="./" width="150" height="100">
+        </a>
+            <span class="navbar-burger burger" aria-label="menu" aria-expanded="false" width="300" data-target="navMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </span>
+            </button>
+          </div>
+        </div>
+          <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+        
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Start Discovering
+                </a>
+                <div class="navbar-dropdown">
+                  <a href="dining.html" class="navbar-item">
+                    Dining
+                  </a>
+                  <a href="entertainment.html" class="navbar-item">
+                    Entertainment
+                  </a>
+                  <a href="things-to-do.html" class="navbar-item">
+                    Things To Do
+                  </a>
+                </div>
               </span>
-              </button>
+              </div>
+            </div>
+            
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                </div>
+              </div>
             </div>
           </div>
-            <div id="navMenu" class="navbar-menu">
-              <div class="navbar-start">
-          
-                <div class="navbar-item has-dropdown is-hoverable">
-          
-                  <div class="navbar-dropdown" href="things-to-do.html">
-                    <a class="navbar-item">
-                      Things To Do 
-                    </a>
-                    <a class="navbar-item" href="dining.html">
-                      Dining
-                    </a>
-                    <a class="navbar-item" href="entertainment.html">
-                      Entertainment
-                    </a>
-                    <hr class="navbar-divider">
-                  </div>
-                </span>
-                </div>
-              </div>
-              
-          
-              <div class="navbar-end">
-                <div class="navbar-item">
-                </div>
-              </div>
-            </div>
-          </nav>
-    </navbar>
+        </nav>
+  </navbar>
+    <div class="columns"></div>
+            <!-- Weather Display -->
+
+            <!-- Weather End -->
     <!--This is the big main image on the page-->
     <div id="main-image-container">
-
-        <img type="image" class="image is-150x150" id="main-image"
-            src="https://cdn.pixabay.com/photo/2015/10/11/03/04/orlando-981748_1280.jpg"
-            alt="The Orlando skyline with the Convention Center featured prominently.">
-
     <h1 id="sub-title" class="container is-fluid"></h1>
     <p class="is-size-3" class="is-$color-$black-ter">
         Please Enjoy Some Of Our Dining Choices 
@@ -156,7 +157,12 @@
               alt="Someone racing a go kart around a tight turn" class="image is-300x300">
           </a>
   </container>
-    <script src="assets/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script src="/assets/js/weather.js"></script>
 </body>
 
 </html>
