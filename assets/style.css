@@ -95,6 +95,11 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     margin: 6px;
 }
 
+.image-center{
+    margin: 10px auto;
+    text-align: center;
+}
+
 /*Currency Converter*/
 #currency-converter{
     padding: 35px;
@@ -171,6 +176,10 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 }
 
 /*End flight Search*/
+
+/* Entertainment Page */
+
+/* Entertainment Page - End*/
 
 /*@media queries (responsive)*/
 @media screen and (max-width: 768px) {
