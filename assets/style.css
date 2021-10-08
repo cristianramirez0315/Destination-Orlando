@@ -171,3 +171,19 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 }
 
 /*End flight Search*/
+
+/*@media queries (responsive)*/
+@media screen and (max-width: 768px) {
+    #hero-image {
+        padding-top: 100%;
+        background-position: bottom 100px center;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #hero-image {
+        padding-top: 100%;
+        background-position: center center;
+    }
+}
+/*@media queries (responsive) - END*/
+
