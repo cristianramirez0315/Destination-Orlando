@@ -51,6 +51,12 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
     flex-wrap: wrap;
     
 }
+
+.h2-centered{
+    text-align: center;
+    font-size: 30px;
+}
+
 /*Main Image*/
 #hero-image{
     background-image: url(https://cdn.pixabay.com/photo/2015/10/11/03/04/orlando-981748_1280.jpg);

@@ -6,9 +6,9 @@
 
     // set variables for currency 3-letter code and amount to be converted
     let from = $("#dropDown").val();
-    console.log(from);
+    // console.log(from);
     let amount = $("#currencyType").val();
-    console.log(amount);
+    // console.log(amount);
 
     let convertedResults = {};
 
@@ -23,7 +23,7 @@
     })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.result);
+      // console.log(data.result);
       $('#convertedAmount').append(data.result);
     })
   });
