@@ -134,6 +134,9 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 /*End Currancy Converter*/
 
 /*Begin Flight Search*/
+#flight-section {
+    padding: 35px;
+}
 
 #fetch-airports {
     margin-top: 10px;
