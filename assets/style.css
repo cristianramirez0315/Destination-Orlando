@@ -152,7 +152,7 @@ If I'm wrong, please let me know and delete this line.  Thanks! */
 }
 
 #flight-list {
-    overflow: scroll; 
+    overflow: auto; 
     height: 240px;
 }
 
