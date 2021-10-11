@@ -19,9 +19,9 @@ let weather = {
        
            },
            displayWeather: function(data){
-               const { icon } = data.weather[0];
-               const { temp_min } = data.main
-               const { temp_max } = data.main
+               let { icon } = "01n";
+               let { temp_min } = data.main;
+               let { temp_max } = data.main;
                console.log(icon,temp_max,temp_min)
 
                var WeatherHeader = document.createElement('p');
