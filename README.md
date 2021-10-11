@@ -1,5 +1,7 @@
 # Destination Orlando 
 
+<image href="./assets/images/Screenshot.jpg">
+
 ## Purpose
 To showcase my ability to create referenced CSS sheets for HTML documents 
 

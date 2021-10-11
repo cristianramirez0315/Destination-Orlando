@@ -86,14 +86,12 @@
 
   <!--This is the big main image on the page-->
 
-  <div id="hero-image">
-
-  </div>
+  <div id="hero-image"></div>
   <div class="columns container is-fluid" id="flight-plus-currency-section">
     <!-- Start flights-->
-    <div class="column box is-half">
+    <div class="column box is-half" id="flight-section">
         <!---->
-        <div id="search-flight-heading">Search for your flight to Orlando</div>
+        <h1 class="title">Search for your flight to Orlando</h1>
         <div id="departure-city">
           <label class="label" for="city" id="departure-date-heading">Departure location</label>
           <input class="input" id="city" type="text" />
@@ -131,17 +129,15 @@
 
     <!--Currency Coverter-->
     <div class="column box is-half" id="currency-converter">
-      <h2 id="currency-converter-h2">Currency Converter</h2>
+      <h1 class="title">Currency Converter</h1>
       <p id="currency-converter-p">How much is your money worth in Orlando, FL? Enter the amount of YOUR money you
         want to convert and the type of currency to find out how much it's worth in Orlando.</p>
       <form method="post">
         <input type="number" id="currencyType" placeholder="Amount to Convert" class="box"> <br />
         <select id="dropDown" name="dropdown" class="box">
           <option value="NONE">Please select your currency</option>
-          <option value="AFA">Afghanistan afghani</option>
           <option value="ALL">Albanian lek</option>
           <option value="DZD">Algerian dinar</option>
-          <option value="AOR">Angolan kwanza reajustado</option>
           <option value="ARS">Argentine peso</option>
           <option value="AMD">Armenian dram</option>
           <option value="AWG">Aruban guilder</option>
@@ -149,7 +145,6 @@
           <option value="AZN">Azerbaijanian new manat</option>
           <option value="BSD">Bahamian dollar</option>
           <option value="BHD">Bahraini dinar</option>
-          <option value="BUT">Bangladeshi taka</option>
           <option value="BBD">Barbados dollar</option>
           <option value="BYN">Belarusian ruble</option>
           <option value="BZD">Belize dollar</option>
@@ -158,7 +153,7 @@
           <option value="BOB">Bolivian boliviano</option>
           <option value="BWP">Botswana pula</option>
           <option value="BRL">Brazilian real</option>
-          <option value="GPB">British pound</option>
+          <option value="GBP">British pound</option>
           <option value="BND">Brunei dollar</option>
           <option value="BGN">Bulgarian lev</option>
           <option value="BIF">Burundi franc</option>
@@ -312,19 +307,20 @@
     <!--End Currency Converter-->
   </div>
   <div class="container is-fluid">
-    <h1 id="sub-title" class="container is-fluid"></h1>
-    <p class="is-size-3" class="is-$color-$black-ter">
-      Plan your trip to Orlando, Florida!
-    </p>
-    <p class="is-size-5" class="is-$color-$grey-light">
-      Orlando is the proud home of some of the world's greatest theme parks, restaurants, and more!
-      Book your trip to day to come see why it is an world famous travel destination.
-      Simpy select the days you wish to visit for weather information to aid in your planning.
-      Click on our handy Currency Converter for a better understanding of the conversion rate.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam neque ut necessitatibus,
-      quis odit amet eveniet possimus culpa animi tempora dolor est illo, qui voluptas consectetur
-      tenetur atque dolorem nisi?
-    </p>
+    <div class="box">
+      <p class="is-size-3" class="is-$color-$black-ter">
+        Plan your trip to Orlando, Florida!
+      </p>
+      <p class="is-size-5" class="is-$color-$grey-light">
+        Orlando is the proud home of some of the world's greatest theme parks, restaurants, and more!
+        Book your trip to day to come see why it is an world famous travel destination.
+        Simpy select the days you wish to visit for weather information to aid in your planning.
+        Click on our handy Currency Converter for a better understanding of the conversion rate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam neque ut necessitatibus,
+        quis odit amet eveniet possimus culpa animi tempora dolor est illo, qui voluptas consectetur
+        tenetur atque dolorem nisi?
+      </p>
+    </div>
     <container class="columns" id="thingstodo" class="section_body-text">
       <!--Entertainment Subsection-->
       <div class="column" id="">
@@ -333,12 +329,13 @@
           Entertainment
         
         </h2>
-
-        <a href="entertainment.html">
-          <img id="entertainmentImg" src="https://cdn.pixabay.com/photo/2017/08/29/09/26/disney-2692578_1280.jpg"
-            alt="A statue of Walt Disney holding Mickey Mouse's hand stands before the Cinderella Castle"
-            class="image is-300x300">
-        </a>
+        <div class="box">
+          <a href="entertainment.html">
+            <img id="entertainmentImg" src="https://cdn.pixabay.com/photo/2017/08/29/09/26/disney-2692578_1280.jpg"
+              alt="A statue of Walt Disney holding Mickey Mouse's hand stands before the Cinderella Castle"
+              class="image is-300x300">
+          </a>
+        </div>
       </div>
       <!--Dining Subsection-->
       <div class="column" id="dining">
@@ -347,22 +344,24 @@
           Dining
         
         </h2>
-
-        <a href="dining.html">
-          <img id="diningImg" src="https://cdn.pixabay.com/photo/2015/03/26/10/28/restaurant-691397_1280.jpg"
-            alt="A table with delicious looking fine dining set out" class="image is-300x300">
-        </a>
+        <div class="box">
+          <a href="dining.html">
+            <img id="diningImg" src="https://cdn.pixabay.com/photo/2015/03/26/10/28/restaurant-691397_1280.jpg"
+              alt="A table with delicious looking fine dining set out" class="image is-300x300">
+          </a>
+        </div>
       </div>
       <!--Things to Do Subsection-->
       <div class="column">
         <h2 id="thingsToDo" class="is-size-4" class="is-$color-$black-ter">
           Things To Do
         </h2>
-
-        <a href="things-to-do.html">
-          <img id="thingsToDoImg" src="https://cdn.pixabay.com/photo/2015/12/07/10/24/go-kart-1080492_1280.jpg"
-            alt="Someone racing a go kart around a tight turn" class="image is-300x300">
-        </a>
+        <div class="box">
+          <a href="things-to-do.html">
+            <img id="thingsToDoImg" src="https://cdn.pixabay.com/photo/2015/12/07/10/24/go-kart-1080492_1280.jpg"
+              alt="Someone racing a go kart around a tight turn" class="image is-300x300">
+          </a>
+        </div>
       </div>
     </container>
   </div>
